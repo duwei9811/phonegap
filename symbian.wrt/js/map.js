@@ -10,9 +10,11 @@ function Map() {
  * @param {Array} positions
  */
 Map.prototype.show = function(positions) {
-	
+
+	var err = "map api is unimplemented on symbian.wrt";
+	debug.log(err);
+	return { name: "MapError", message: err }
+
 }
 
-PhoneGap.addConstructor(function() {
-    if (typeof navigator.map == "undefined") navigator.map = new Map();
-});
+if (typeof navigator.map == "undefined") navigator.map = new Map();

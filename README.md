@@ -29,6 +29,16 @@ offers one unified API for accessing core functionality on all
 devices. Where possible, phonegap follows the **HTML5 spec**.
 
 
+PhoneGap-iPhone
+-------------------------------------------------------------
+The main repo is at http://github.com/phonegap/phonegap-iphone it is
+submoduled into this project.
+
+To get the submodule, from a command prompt, while in the root folder of phonegap:
+1) git submodule init
+2) git submodule update
+
+
 API
 -------------------------------------------------------------
 
