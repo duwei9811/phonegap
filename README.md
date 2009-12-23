@@ -12,7 +12,7 @@ Get the source.
 
     git clone git://github.com/phonegap/phonegap.git
     
-PhoneGap project is separated into a native project for each 
+PhoneGap project is separated into git submodules for each 
 device.
 
     phonegap
@@ -28,16 +28,22 @@ for detailed information on how to work with that device. PhoneGap
 offers one unified API for accessing core functionality on all 
 devices. Where possible, phonegap follows the **HTML5 spec**.
 
-
-PhoneGap-iPhone
+Getting the Submodules
 -------------------------------------------------------------
-The main repo is at http://github.com/phonegap/phonegap-iphone it is
-submoduled into this project.
 
-To get the submodule, from a command prompt, while in the root folder of phonegap:
-1) git submodule init
-2) git submodule update
+1. Launch "Terminal.app" and navigate to the phonegap folder (this folder)
+2. Type in "git submodule init" and press Enter
+3. Type in "git submodule update" and press Enter
 
+
+Updating a Submodule
+-------------------------------------------------------------
+
+The submodules only get the code at a certain commit, when initially added. From time to time, we will update this commit pointer. To manually update to the latest code:
+
+1.	Launch "Terminal.app" and navigate to the submodule folder
+2.	Type in "git remote update" and press Enter
+3.  Type in "git merge origin/master" and press Enter	
 
 API
 -------------------------------------------------------------
@@ -82,7 +88,6 @@ Play sound files (WAV, MP3, etc).
 
 Trigger and activate phone calls.
 
-
 XUI
 -------------------------------------------------------------
 You may work with any Javascript framework within a PhoneGap 
@@ -95,7 +100,7 @@ Community
 -------------------------------------------------------------
   * Website - [phonegap.com](http://phonegap.com)
   * Google Group - [groups.google.com/group/phonegap](http://groups.google.com/group/phonegap)
-  * Wiki - [phonegap.pbworks.com/](http://phonegap.pbworks.com/)
+  * Wiki - [wiki.phonegap.com/](http://wiki.phonegap.com/)
   * Twitter - [twitter.com/phonegap](http://twitter.com/phonegap)
   * Issue Tracker [phonegap.lighthouseapp.com](http://phonegap.lighthouseapp.com/)
   
@@ -107,8 +112,9 @@ Fork, commit, push, and send us a pull request at phonegap/phonegap.
 
 The MIT License
 -------------------------------------------------------------
-Copyright (c) 2008
-Rob Ellis, Brock Whitten, Brian Leroux, Joe Bowser, Dave Johnson, Nitobi
+Copyright (c) 2008, 2009, 2010
+Rob Ellis, Brock Whitten, Brian Leroux, Joe Bowser, Dave Johnson,
+Shazron Abdullah, Jesse MacFadyen, Filip Maj, Ryan Willoughby, Nitobi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
