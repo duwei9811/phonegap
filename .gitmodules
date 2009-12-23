@@ -1,3 +1,18 @@
 [submodule "iphone"]
 	path = iphone
 	url = git://github.com/phonegap/phonegap-iphone.git
+[submodule "winmo"]
+	path = winmo
+	url = git://github.com/phonegap/phonegap-winmo.git
+[submodule "blackberry"]
+	path = blackberry
+	url = git://github.com/phonegap/phonegap-blackberry.git
+[submodule "android"]
+	path = android
+	url = git://github.com/phonegap/phonegap-android.git
+[submodule "palm"]
+	path = palm
+	url = git://github.com/phonegap/phonegap-palm.git
+[submodule "symbian.wrt"]
+	path = symbian.wrt
+	url = git://github.com/phonegap/phonegap-symbian.wrt.git
